@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MulticastDelegate",
+        "repositoryURL": "https://github.com/jonasman/MulticastDelegate",
+        "state": {
+          "branch": null,
+          "revision": "8826c0979f950acbee92738848de5e8defd59d17",
+          "version": "2.1.5"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

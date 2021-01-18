@@ -1,0 +1,27 @@
+.DS_Store
+
+*.xcuserstate
+xcuserdata/
+
+### Playgrounds ###
+MinorityPlayground.playground/Contents.swift
+
+### CocoaPods ###
+Pods
+
+### FastLane Build Outputs ###
+
+build
+/fastlane/report.xml
+
+### Xcode ###
+build
+!*.xcworkspace/contents.xcworkspacedata
+project.pbxproj_BACKUP_94405.orig
+project.pbxproj_BACKUP_94596.orig
+project.pbxproj_BASE_94405.orig
+project.pbxproj_BASE_94596.orig
+project.pbxproj_LOCAL_94405.orig
+project.pbxproj_LOCAL_94596.orig
+project.pbxproj_REMOTE_94405.orig
+project.pbxproj_REMOTE_94596.orig
