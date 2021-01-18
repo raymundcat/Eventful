@@ -27,10 +27,18 @@ class HeroViewController: MarvelViewController<HeroViewEvent, HeroPresenterEvent
 
 class HeroPresenter: MarvelPresenter<HeroViewEvent, HeroPresenterEvent, HeroPresentableEvent> {
     
+    override func viewController(didSend event: MarvelViewControllerEvent) {
+        
+    }
     
+    override func view(didSend event: HeroViewEvent) {
+        
+    }
 }
 
 class HeroView: MarvelRootView<HeroViewEvent, HeroPresentableEvent> {
     
-    
+    override func presenter(didSend event: HeroPresentableEvent) {
+        
+    }
 }

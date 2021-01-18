@@ -60,6 +60,16 @@ open class MarvelViewController<MarvelViewEvent: ViewEvent, MarvelPresenterEvent
         }
     }
     
+    //MARK: Events Listening
+
+    open override func presenter(didSend event: PresenterEvent) {
+        if let presenterEvent = event as? MarvelPresenterEvent {
+            self.presenter(didSend: presenterEvent)
+        }
+    }
+
+    open override func presenter(didSend event: MarvelPresenterEvent) { }
+    
     // MARK: Overriding functions
 
     public override func viewDidLoad() {

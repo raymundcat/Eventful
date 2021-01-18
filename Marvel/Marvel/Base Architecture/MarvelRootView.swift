@@ -12,11 +12,17 @@ open class MarvelRootView<MarvelViewEvent: ViewEvent, MarvelPresentableEvent: Pr
     
     //MARK: Events Catching
     
-    open func viewController(didSend event: MarvelViewControllerEvent) {
-        
+    open override func presenter(didSend event: PresentableEvent) {
+        if let presenterEvent = event as? MarvelPresentableEvent {
+            self.presenter(didSend: presenterEvent)
+        }
     }
+
+    // MARK: Generic Event Catching
+
+    open override func presenter(didSend event: MarvelPresentableEvent) { }
     
-    public func presenter(didSend event: MarvelCorePresentableEvent) {
-        
-    }
+    open func viewController(didSend event: MarvelViewControllerEvent) { }
+    
+    public func presenter(didSend event: MarvelCorePresentableEvent) { }
 }

@@ -34,7 +34,15 @@ open class MarvelPresenter<MarvelViewEvent: ViewEvent, MarvelPresenterEvent: Pre
     
     //MARK: Events Catching
     
-    open func viewController(didSend event: MarvelViewControllerEvent) {
-        
+    override open func view(didSend event: ViewEvent) {
+        if let viewEvent = event as? MarvelViewEvent {
+            self.view(didSend: viewEvent)
+        }
     }
+
+    // Generic Events Catching
+
+    open override func view(didSend event: MarvelViewEvent) { }
+    
+    open func viewController(didSend event: MarvelViewControllerEvent) { }
 }

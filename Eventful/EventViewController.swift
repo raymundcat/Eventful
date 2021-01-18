@@ -38,15 +38,10 @@ open class EventViewController<ViewEventType: ViewEvent, PresenterEventType: Pre
     //MARK: Bindings
     
     open func setupBindings() {
-//        observeKeyboardEvents()
             
         // Presenter Events
         rootPresenter.eventListeners.addDelegate(self)
         rootPresenter.presentables.addDelegate(rootView)
-
-//        // ViewController Events
-//        viewControllerEventListeners.addDelegate(rootView)
-//        viewControllerEventListeners.addDelegate(rootPresenter)
 
         // RootView Events
         rootView.eventListeners.addDelegate(rootPresenter)
