@@ -24,5 +24,5 @@ open class MarvelRootView<MarvelViewEvent: ViewEvent, MarvelPresentableEvent: Pr
     
     open func viewController(didSend event: MarvelViewControllerEvent) { }
     
-    public func presenter(didSend event: MarvelCorePresentableEvent) { }
+    open func presenter(didSend event: MarvelCorePresentableEvent) { }
 }
