@@ -5,7 +5,7 @@
 //  Created by Raymund Catahay on 2021-01-18.
 //
 
-import Foundation
+import UIKit
 import Eventful
 
 open class MarvelRootView<MarvelViewEvent: ViewEvent, MarvelPresentableEvent: PresentableEvent>: EventRootView<MarvelViewEvent, MarvelPresentableEvent>, MarvelViewControllerEventListener, MarvelCorePresentableEventListener {
