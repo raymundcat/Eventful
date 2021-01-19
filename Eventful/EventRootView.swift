@@ -18,7 +18,7 @@ open class EventRootView<ViewEventType: ViewEvent, PresentableEventType: Present
 
     // MARK: Sending Events
 
-    var eventListeners = MulticastDelegate<ViewEventListener>()
+    public var eventListeners = MulticastDelegate<ViewEventListener>()
 
     open func send(event: ViewEvent) {
         eventListeners.invokeDelegates { (delegate) in

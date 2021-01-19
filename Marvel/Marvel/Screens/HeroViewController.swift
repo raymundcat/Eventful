@@ -8,7 +8,9 @@
 import Foundation
 import Eventful
 
-class HeroViewController: MarvelViewController<HeroViewEvent, HeroPresenterEvent, HeroPresentableEvent> {
+enum HeroEvent: Event { }
+
+class HeroViewController: MarvelViewController<HeroEvent, HeroViewEvent, HeroPresenterEvent, HeroPresentableEvent> {
     
     override func preparePresenter() -> HeroPresenter {
         return HeroPresenter()

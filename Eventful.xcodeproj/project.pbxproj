@@ -11,7 +11,6 @@
 		EC44B8CF25B63CC800C1E7FF /* EventfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8CE25B63CC800C1E7FF /* EventfulTests.swift */; };
 		EC44B8D125B63CC800C1E7FF /* Eventful.h in Headers */ = {isa = PBXBuildFile; fileRef = EC44B8C325B63CC800C1E7FF /* Eventful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC44B8DE25B63CE700C1E7FF /* MulticastDelegate in Frameworks */ = {isa = PBXBuildFile; productRef = EC44B8DD25B63CE700C1E7FF /* MulticastDelegate */; };
-		EC44B8E525B63CF700C1E7FF /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E125B63CF700C1E7FF /* Events.swift */; };
 		EC44B8E625B63CF700C1E7FF /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E225B63CF700C1E7FF /* EventPresenter.swift */; };
 		EC44B8E725B63CF700C1E7FF /* EventRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E325B63CF700C1E7FF /* EventRootView.swift */; };
 		EC44B8E825B63CF700C1E7FF /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E425B63CF700C1E7FF /* EventViewController.swift */; };
@@ -34,7 +33,6 @@
 		EC44B8C925B63CC800C1E7FF /* EventfulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventfulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC44B8CE25B63CC800C1E7FF /* EventfulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventfulTests.swift; sourceTree = "<group>"; };
 		EC44B8D025B63CC800C1E7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC44B8E125B63CF700C1E7FF /* Events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		EC44B8E225B63CF700C1E7FF /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
 		EC44B8E325B63CF700C1E7FF /* EventRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRootView.swift; sourceTree = "<group>"; };
 		EC44B8E425B63CF700C1E7FF /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				EC44B8E225B63CF700C1E7FF /* EventPresenter.swift */,
 				EC44B8E325B63CF700C1E7FF /* EventRootView.swift */,
 				EC44B8E425B63CF700C1E7FF /* EventViewController.swift */,
-				EC44B8E125B63CF700C1E7FF /* Events.swift */,
 				EC44B8C325B63CC800C1E7FF /* Eventful.h */,
 				EC44B8C425B63CC800C1E7FF /* Info.plist */,
 			);
@@ -215,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC44B8E525B63CF700C1E7FF /* Events.swift in Sources */,
 				EC44B8E825B63CF700C1E7FF /* EventViewController.swift in Sources */,
 				EC44B8E725B63CF700C1E7FF /* EventRootView.swift in Sources */,
 				EC44B8E625B63CF700C1E7FF /* EventPresenter.swift in Sources */,

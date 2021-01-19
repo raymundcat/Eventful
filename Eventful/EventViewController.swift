@@ -8,7 +8,13 @@
 import UIKit
 import MulticastDelegate
 
-open class EventViewController<ViewEventType: ViewEvent, PresenterEventType: PresenterEvent, PresentableEventType: PresentableEvent>: UIViewController, PresenterEventListener {
+public protocol Event { }
+
+public protocol EventListener: class {
+    func viewController(didSend event: Event)
+}
+
+open class EventViewController<EventType: Event, ViewEventType: ViewEvent, PresenterEventType: PresenterEvent, PresentableEventType: PresentableEvent>: UIViewController, PresenterEventListener {
 
     //MARK: Coordinator Requirements
 
@@ -23,6 +29,8 @@ open class EventViewController<ViewEventType: ViewEvent, PresenterEventType: Pre
     open func prepareRootView() -> EventRootView<ViewEventType, PresentableEventType>  {
         return EventRootView<ViewEventType, PresentableEventType>()
     }
+    
+    public var eventListeners = MulticastDelegate<EventListener>()
 
     //MARK: Life Cycle
     
@@ -45,6 +53,14 @@ open class EventViewController<ViewEventType: ViewEvent, PresenterEventType: Pre
 
         // RootView Events
         rootView.eventListeners.addDelegate(rootPresenter)
+    }
+    
+    //MARK: Events Sending
+    
+    open func send(event: EventType) {
+        eventListeners.invokeDelegates { (delegate) in
+            delegate.viewController(didSend: event)
+        }
     }
 
     //MARK: Events Listening

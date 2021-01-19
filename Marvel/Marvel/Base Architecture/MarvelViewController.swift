@@ -30,7 +30,7 @@ public protocol MarvelViewControllerEventListener: class {
     func viewController(didSend event: MarvelViewControllerEvent)
 }
 
-open class MarvelViewController<MarvelViewEvent: ViewEvent, MarvelPresenterEvent: PresenterEvent, MarvelPresentableEvent: PresentableEvent>: EventViewController<MarvelViewEvent, MarvelPresenterEvent, MarvelPresentableEvent> {
+open class MarvelViewController<MarvelEvent: Event, MarvelViewEvent: ViewEvent, MarvelPresenterEvent: PresenterEvent, MarvelPresentableEvent: PresentableEvent>: EventViewController<MarvelEvent, MarvelViewEvent, MarvelPresenterEvent, MarvelPresentableEvent> {
     
     //MARK: Life Cycle
     

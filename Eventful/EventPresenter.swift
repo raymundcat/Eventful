@@ -26,9 +26,9 @@ open class EventPresenter<ViewEventType: ViewEvent, PresenterEventType: Presente
     
     // Events Sending
 
-    var eventListeners = MulticastDelegate<PresenterEventListener>()
+    public var eventListeners = MulticastDelegate<PresenterEventListener>()
 
-    var presentables = MulticastDelegate<PresentableEventListener>()
+    public var presentables = MulticastDelegate<PresentableEventListener>()
 
     open func send(event: PresenterEventType) {
         eventListeners.invokeDelegates { (delegate) in
