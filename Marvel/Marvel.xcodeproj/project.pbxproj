@@ -20,9 +20,6 @@
 		EC44B93F25B63EB500C1E7FF /* MarvelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B93E25B63EB500C1E7FF /* MarvelViewController.swift */; };
 		EC44B94325B6432B00C1E7FF /* MarvelEventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B94225B6432B00C1E7FF /* MarvelEventPresenter.swift */; };
 		EC44B94725B643C500C1E7FF /* MarvelRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B94625B643C500C1E7FF /* MarvelRootView.swift */; };
-		EC44B94E25B6499400C1E7FF /* HeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B94D25B6499400C1E7FF /* HeroViewController.swift */; };
-		EC45D4CE25B7981100FC080B /* HeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45D4CD25B7981100FC080B /* HeroView.swift */; };
-		EC45D4D225B7988200FC080B /* HeroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC45D4D125B7988200FC080B /* HeroPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,9 +72,6 @@
 		EC44B93E25B63EB500C1E7FF /* MarvelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelViewController.swift; sourceTree = "<group>"; };
 		EC44B94225B6432B00C1E7FF /* MarvelEventPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelEventPresenter.swift; sourceTree = "<group>"; };
 		EC44B94625B643C500C1E7FF /* MarvelRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelRootView.swift; sourceTree = "<group>"; };
-		EC44B94D25B6499400C1E7FF /* HeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroViewController.swift; sourceTree = "<group>"; };
-		EC45D4CD25B7981100FC080B /* HeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroView.swift; sourceTree = "<group>"; };
-		EC45D4D125B7988200FC080B /* HeroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,9 +184,6 @@
 		EC44B94C25B6497F00C1E7FF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				EC44B94D25B6499400C1E7FF /* HeroViewController.swift */,
-				EC45D4D125B7988200FC080B /* HeroPresenter.swift */,
-				EC45D4CD25B7981100FC080B /* HeroView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -328,10 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC45D4D225B7988200FC080B /* HeroPresenter.swift in Sources */,
 				EC44B94725B643C500C1E7FF /* MarvelRootView.swift in Sources */,
-				EC44B94E25B6499400C1E7FF /* HeroViewController.swift in Sources */,
-				EC45D4CE25B7981100FC080B /* HeroView.swift in Sources */,
 				EC44B90025B63DFE00C1E7FF /* ViewController.swift in Sources */,
 				EC44B8FC25B63DFE00C1E7FF /* AppDelegate.swift in Sources */,
 				EC44B94325B6432B00C1E7FF /* MarvelEventPresenter.swift in Sources */,
