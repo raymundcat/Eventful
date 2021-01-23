@@ -25,7 +25,7 @@ let package = Package(
         .target(
             name: "Eventful",
             dependencies: ["MulticastDelegate"],
-            path: "Sources"),
+            path: "Sources/Eventful"),
         .testTarget(
             name: "EventfulTests",
             dependencies: ["Eventful"]),
