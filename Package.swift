@@ -24,7 +24,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Eventful",
-            dependencies: ["MulticastDelegate"]),
+            dependencies: ["MulticastDelegate"],
+            path: "Sources"),
         .testTarget(
             name: "EventfulTests",
             dependencies: ["Eventful"]),
