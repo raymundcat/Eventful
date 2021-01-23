@@ -5,9 +5,9 @@
         "package": "MulticastDelegate",
         "repositoryURL": "https://github.com/jonasman/MulticastDelegate",
         "state": {
-          "branch": "master",
-          "revision": "4418ae5c74f13250ab7cd10993f3f29ece92e3dd",
-          "version": null
+          "branch": null,
+          "revision": "8826c0979f950acbee92738848de5e8defd59d17",
+          "version": "2.1.5"
         }
       }
     ]
