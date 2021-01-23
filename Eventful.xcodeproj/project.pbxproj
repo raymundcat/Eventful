@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC04FD7D25BBA9A80006B6EC /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04FD7A25BBA9A80006B6EC /* EventViewController.swift */; };
+		EC04FD7E25BBA9A80006B6EC /* EventRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04FD7B25BBA9A80006B6EC /* EventRootView.swift */; };
+		EC04FD7F25BBA9A80006B6EC /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC04FD7C25BBA9A80006B6EC /* EventPresenter.swift */; };
 		EC44B8CA25B63CC800C1E7FF /* Eventful.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC44B8C025B63CC800C1E7FF /* Eventful.framework */; };
 		EC44B8CF25B63CC800C1E7FF /* EventfulTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8CE25B63CC800C1E7FF /* EventfulTests.swift */; };
 		EC44B8D125B63CC800C1E7FF /* Eventful.h in Headers */ = {isa = PBXBuildFile; fileRef = EC44B8C325B63CC800C1E7FF /* Eventful.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC44B8DE25B63CE700C1E7FF /* MulticastDelegate in Frameworks */ = {isa = PBXBuildFile; productRef = EC44B8DD25B63CE700C1E7FF /* MulticastDelegate */; };
-		EC44B8E625B63CF700C1E7FF /* EventPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E225B63CF700C1E7FF /* EventPresenter.swift */; };
-		EC44B8E725B63CF700C1E7FF /* EventRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E325B63CF700C1E7FF /* EventRootView.swift */; };
-		EC44B8E825B63CF700C1E7FF /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC44B8E425B63CF700C1E7FF /* EventViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +27,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC04FD7A25BBA9A80006B6EC /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		EC04FD7B25BBA9A80006B6EC /* EventRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRootView.swift; sourceTree = "<group>"; };
+		EC04FD7C25BBA9A80006B6EC /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
 		EC44B8C025B63CC800C1E7FF /* Eventful.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Eventful.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC44B8C325B63CC800C1E7FF /* Eventful.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eventful.h; sourceTree = "<group>"; };
 		EC44B8C425B63CC800C1E7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC44B8C925B63CC800C1E7FF /* EventfulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EventfulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC44B8CE25B63CC800C1E7FF /* EventfulTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventfulTests.swift; sourceTree = "<group>"; };
 		EC44B8D025B63CC800C1E7FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC44B8E225B63CF700C1E7FF /* EventPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventPresenter.swift; sourceTree = "<group>"; };
-		EC44B8E325B63CF700C1E7FF /* EventRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventRootView.swift; sourceTree = "<group>"; };
-		EC44B8E425B63CF700C1E7FF /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +58,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC04FD7825BBA9A80006B6EC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EC04FD7925BBA9A80006B6EC /* Eventful */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		EC04FD7925BBA9A80006B6EC /* Eventful */ = {
+			isa = PBXGroup;
+			children = (
+				EC04FD7A25BBA9A80006B6EC /* EventViewController.swift */,
+				EC04FD7B25BBA9A80006B6EC /* EventRootView.swift */,
+				EC04FD7C25BBA9A80006B6EC /* EventPresenter.swift */,
+			);
+			path = Eventful;
+			sourceTree = "<group>";
+		};
 		EC44B8B625B63CC800C1E7FF = {
 			isa = PBXGroup;
 			children = (
@@ -79,9 +97,7 @@
 		EC44B8C225B63CC800C1E7FF /* Eventful */ = {
 			isa = PBXGroup;
 			children = (
-				EC44B8E225B63CF700C1E7FF /* EventPresenter.swift */,
-				EC44B8E325B63CF700C1E7FF /* EventRootView.swift */,
-				EC44B8E425B63CF700C1E7FF /* EventViewController.swift */,
+				EC04FD7825BBA9A80006B6EC /* Sources */,
 				EC44B8C325B63CC800C1E7FF /* Eventful.h */,
 				EC44B8C425B63CC800C1E7FF /* Info.plist */,
 			);
@@ -212,9 +228,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC44B8E825B63CF700C1E7FF /* EventViewController.swift in Sources */,
-				EC44B8E725B63CF700C1E7FF /* EventRootView.swift in Sources */,
-				EC44B8E625B63CF700C1E7FF /* EventPresenter.swift in Sources */,
+				EC04FD7D25BBA9A80006B6EC /* EventViewController.swift in Sources */,
+				EC04FD7E25BBA9A80006B6EC /* EventRootView.swift in Sources */,
+				EC04FD7F25BBA9A80006B6EC /* EventPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
