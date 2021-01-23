@@ -43,6 +43,10 @@ open class EventViewController<EventType: Event, ViewEventType: ViewEvent, Prese
         fatalError("init(coder:) has not been implemented")
     }
     
+    open override func loadView() {
+        self.view = rootView
+    }
+    
     //MARK: Bindings
     
     open func setupBindings() {
