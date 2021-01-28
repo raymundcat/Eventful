@@ -3,6 +3,24 @@ Eventful is a Swift project plugin ready Coordinator pattern template designed t
 
 This is made possible by binding the coordinator's three main components - ViewController *(Navigation)*, RootView *(View)* and Presenter *(Business Layer)* with Enum types of **Events** so each component know exactly the finite set of events they can receive from each other while keeping them completely abstracted
 
+## How does it work?
+
+#### Generics binding
+
+#### Enum Events
+
+## How to use
+
+#### Templates
+Move the [Xcode templates](https://github.com/raymundcat/Eventful/tree/master/Eventful%20Templates) to your templates directory. You will find two templates:
+
+ 1. **Project's Base Class Template** - So you can adopt a name that suits your project/company. Take the opportunity to bake in your 'nice-to-have's  in this area as the next template will be built on top of this one
+ 2. **Subclassing Template** - Use this to easily build your new screens using your generated base template
+
+#### Baking in your feature
+
+In our projects, we've found a lot of nice useful features 
+ 
 ## Main Components
 
 ### ViewController
